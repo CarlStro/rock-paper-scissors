@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    background-color: rgb(161, 146, 146);
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+}
+
+.scoreYou,
+.scoreAI {
+   
+    font-size: 70px;
+    width: 200px;
+    padding: 0;
+    margin: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.scoreYou {
+    color: rgb(161, 57, 57);
+    text-align: right;
+}
+
+.scoreAI {
+    color: rgb(58, 58, 160);
+    text-align: left;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 10px;
+    width: 150px;
+    height: 45px;
+    font-size: 30px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.result {
+    font-size: 30px;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.pressed {
+    background-color: rgb(61, 155, 61);
+    color: rgb(59, 59, 59);
+    size: 1.2;
+}
