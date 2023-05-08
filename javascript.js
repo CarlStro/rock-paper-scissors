@@ -81,8 +81,8 @@ buttons.forEach((button) => {
             loseCount = 0;
         }
         let result = playRound(button.id, getComputerChoice());
-        scoreYou.innerHTML = `You: ${winCount}`;
-        scoreAI.innerHTML = `Ai: ${loseCount}`;
+        scoreYou.innerHTML = `You ${winCount}`;
+        scoreAI.innerHTML = `${loseCount} AI`;
         resultText.textContent = result;
         if (winCount == 5) {
             finalText.textContent = 'You are the winner!';
@@ -93,25 +93,3 @@ buttons.forEach((button) => {
         }
     });
 });
-
-
-/*function game() {
-    for (let i = 0; i < 5; i++) {
-        computer = getComputerChoice();
-        player = prompt("Make your choice: Rock, Paper or Scissors");
-
-        console.log(playRound(player, computer));
-        
-        if (i == 4) {
-            if (winCount > loseCount) {
-                console.log("You Won!");
-            }else if (winCount < loseCount) {
-                console.log("You Lost!");
-            }else {
-                console.log("It's a tie!");
-            }
-        }
-    }
-}
-*/
-
